@@ -8,4 +8,4 @@ In todays project we will be creating a Windows Server (2022 Datacenter: Azure E
 
 Once you are logged into you Azure account and are at the portal home, you will first need to navigate to the "Virtual Machines" tab or click in the search bar and type "Virutal Machines". (There are many ways to create a virtual machine, any way works!)
 
-![Alt text](<Screenshot 2024-01-04 at 7.58.28 PM.png>)
+![Alt text](<imgs/Screenshot 2024-01-04 at 7.58.28 PM.png>)
