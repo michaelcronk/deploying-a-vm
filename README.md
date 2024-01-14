@@ -72,6 +72,8 @@ Once inside the resource group you can select all the resources by clicking the 
 
 When prompted, type "delete" and click the delete button.
 
+![Alt text](<imgs/Screenshot 2024-01-04 at 8.21.59 PM.png>)
+
 Now wait until you see that all your resources have been deleted without an error.
 
 With that you have now created a VM, connected to the VM, and deleted all the VMs resources within this project.
