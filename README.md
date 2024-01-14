@@ -1,8 +1,8 @@
 # Deploying a Windows Server Virtual Machine
 
-## Quickly Deploy a Windows Server on a Virtual Machine in Azure using the Portal on MacOS
+## Quickly Deploy a Windows Server on a Virtual Machine in Azure using the Portal (on MacOS)
 
-<sup><strong>DISCLAIMER - This was a follow along through a sandbox enviornment using [Whizlabs](https://www.whizlabs.com/)</strong></sup>
+<sup><strong>DISCLAIMER</strong> - This was a follow along sandbox enviornment using [Whizlabs](https://www.whizlabs.com/)</sup>
 
 > <sub>To get started, you first need to have a Microsoft Azure account. If you don't have one, you can create a free account [here.](https://azure.microsoft.com/en-us/free/search/?&ef_id=_k_Cj0KCQiA4NWrBhD-ARIsAFCKwWv39zVXs4ww7bj_IGmTJngZol8ZX835NOuvRgv7ygSk_rEe9lnrcGcaAg2vEALw_wcB_k_&OCID=AIDcmm5edswduu_SEM__k_Cj0KCQiA4NWrBhD-ARIsAFCKwWv39zVXs4ww7bj_IGmTJngZol8ZX835NOuvRgv7ygSk_rEe9lnrcGcaAg2vEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiA4NWrBhD-ARIsAFCKwWv39zVXs4ww7bj_IGmTJngZol8ZX835NOuvRgv7ygSk_rEe9lnrcGcaAg2vEALw_wcB)</sub>
 
@@ -14,7 +14,7 @@ Once you are logged into you Azure account and are at the portal home, you will 
 
 Under the "Basics" tab you will have to select the Subscription and Resource Group to create the instance in as well as a few other options that are all dependent on your specific project.
 
-- <sup>In this example we will be using a "Windows Server 2022 Datacenter: Azure Edition" image with basic settings to keep costs down.</sup>
+- <sup>For this example we will be using a "Windows Server 2022 Datacenter: Azure Edition" image with basic settings to keep costs down.</sup>
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 7.59.47 PM.png>)
 
@@ -24,11 +24,11 @@ You can select the size of the Virtual Machine you would like to run for your pr
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 8.00.02 PM.png>)
 
-Under the Storage tab, select the storage you will want to use
+Under the Storage tab, select the storage you will want to use.
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 8.01.11 PM.png>)
 
-For this example I will also disable the "Boot diagnostics"
+In this example I will also disable the "Boot diagnostics".
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 8.01.36 PM.png>)
 
@@ -40,10 +40,40 @@ Once the Virtual Machine is deployed, navigate to it and select the "Connect" bu
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 8.05.11 PM.png>)
 
-Since I am on a Mac, I will be using the "Microsoft Remote Desktop" application to RDP into the Windows WM.
+Since I am on a Mac, I will be using the "Microsoft Remote Desktop" application to connect to the Windows WM.
 
 On your computer, navigate to the downloaded RDP file and run it.
 
 - <sup><strong>NOTE:</strong> For this example it will open up a conection box using the "Microsoft Remote Desktop" application for MacOS.</sup>
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 8.07.04 PM.png>)
+
+Now that we are logged into the Windows VM, you can see the Server Manager application and proceed to manage your server how you see fit.
+
+![Alt text](<imgs/Screenshot 2024-01-04 at 8.20.14 PM.png>)
+
+Once you are done you can disconnect from the VM and either clean up your resources so you don't accumulate any more costs or keep the server running for your needs.
+
+For this example we will clean up our resources since we only used this VM for our example project.
+
+We will head into the Azure portal, find our resource group that contains all of our VMs resources and click into the resource group.
+
+From here we have two options:
+
+1. Delete the resource group entirely.
+
+2. Delete the resources inside of the resource group.
+
+We will be deleting the resources inside the group for this project.
+
+Once inside the resource group you can select all the resources by clicking the "name" checkbox and then clicking "delete", as shown below.
+
+![Alt text](<imgs/Screenshot 2024-01-04 at 8.21.32 PM.png>)
+
+When prompted, type "delete" and click the delete button.
+
+Now wait until you see that all your resources have been deleted without an error.
+
+With that you have now created a VM, connected to the VM, and deleted all the VMs resources within this project.
+
+If you have any questions, message me on Discord, Instagram or comment on this repo. Thank you for following along!
