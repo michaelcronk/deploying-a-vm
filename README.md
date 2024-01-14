@@ -20,7 +20,7 @@ Under the "Basics" tab you will have to select the Subscription and Resource Gro
 
 You can select the size of the Virtual Machine you would like to run for your project, create the Username and Password, and select which Public Ports you would like to have open.
 
-- <sup>For this example we will use the "Standard B2s" size and allow "HTTP (80)", "SSH (22)", and "RDP (3389)" since we are launching a Web Server.</sup>
+- <sup>For this example we will use the "Standard B2s" size and allow "HTTP (80)", "SSH (22)", and "RDP (3389)" since we are launching a Web Server. I didn't add any "Netowrk Security Group" to the public ports in this example, but if you are going to run a production VM then consider adding some security to the public ports. If you want to learn more about port security, check out [this article.](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview)</sup>
 
 ![Alt text](<imgs/Screenshot 2024-01-04 at 8.00.02 PM.png>)
 
